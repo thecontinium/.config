@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+COLLAPSED_DIR	zshuery.sh	/^COLLAPSED_DIR() { # by Steve Losh$/;"	f
+_gimme	zshuery.sh	/^    _gimme() { reply=(`brew search`) }$/;"	f
+abspath	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+basename	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+bn	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+cdf	zshuery.sh	/^    cdf() { eval cd "`osascript -e 'tell app "Finder" to return the quoted form of the POSIX path of (target of window 1 as alias)' 2>\/dev\/null`" }$/;"	f
+cj	zshuery.sh	/^cj() { curl -sS $@ | pj } # curl JSON$/;"	f
+cmd	completion/_setup.py	/^    cmd="${${_setuppy_cmds[(r)$words[1]:*]%%:*}:-${(k)_setuppy_syns[(r)(*:|)$words[1](:*|)]}}"$/;"	v
+commands	completion/_manage.py	/^  commands=($/;"	v
+curcontext	completion/_manage.py	/^    curcontext="${curcontext%:*:*}:managepy-$words[1]:"$/;"	v
+curcontext	completion/_setup.py	/^      curcontext="${curcontext%:*:*}:setuppy-${cmd}:"$/;"	v
+curdir	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+evernote	zshuery.sh	/^    evernote() {$/;"	f
+ex	zshuery.sh	/^ex() {$/;"	f
+fcgi_opts	completion/_manage.py	/^  fcgi_opts=($/;"	v
+gimme	zshuery.sh	/^    gimme() { brew install $1 }$/;"	f
+gimme	zshuery.sh	/^    gimme() { su -c 'yum install $1' }$/;"	f
+gimme	zshuery.sh	/^    gimme() { sudo apt-get install $1 }$/;"	f
+git	zshuery.sh	/^    function git(){hub $@}$/;"	f
+has_apt	zshuery.sh	/^has_apt() { [[ -n ${commands[apt-get]} ]] }$/;"	f
+has_brew	zshuery.sh	/^has_brew() { [[ -n ${commands[brew]} ]] }$/;"	f
+has_yum	zshuery.sh	/^has_yum() { [[ -n ${commands[yum]} ]] }$/;"	f
+is_freebsd	zshuery.sh	/^is_freebsd() { [[ $OSTYPE == freebsd* ]] }$/;"	f
+is_linux	zshuery.sh	/^is_linux() { [[ $OSTYPE == linux-gnu ]] }$/;"	f
+is_mac	zshuery.sh	/^is_mac() { [[ $OSTYPE == darwin* ]] }$/;"	f
+jump	zshuery.sh	/^    jump() {$/;"	f
+last_modified	zshuery.sh	/^last_modified() { # by Ryan Bates$/;"	f
+latrus	zshuery.sh	/^latrus() { echo $1 | tr "qwertyuiop[]asdfghjkl;'zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM" "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ" }$/;"	f
+load_aliases	zshuery.sh	/^load_aliases() {$/;"	f
+load_completion	zshuery.sh	/^load_completion() {$/;"	f
+load_correction	zshuery.sh	/^load_correction() {$/;"	f
+load_defaults	zshuery.sh	/^load_defaults() {$/;"	f
+load_lol_aliases	zshuery.sh	/^load_lol_aliases() {$/;"	f
+locatemd	zshuery.sh	/^    locatemd() { mdfind "kMDItemDisplayName == '$@'wc" }$/;"	f
+mailapp	zshuery.sh	/^    mailapp() {$/;"	f
+mcd	zshuery.sh	/^mcd() { mkdir -p "$1" && cd "$1"; }$/;"	f
+md5	zshuery.sh	/^md5() { echo -n $1 | openssl md5 \/dev\/stdin }$/;"	f
+nul_args	completion/_manage.py	/^nul_args=($/;"	v
+op	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+os	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+path	zshuery.sh	/^path() {$/;"	f
+pj	zshuery.sh	/^pj() { python -mjson.tool } # pretty-print JSON$/;"	f
+pman	zshuery.sh	/^    pman() { man $1 -t | open -f -a Preview } # open man pages in Preview$/;"	f
+prompt_char	zshuery.sh	/^prompt_char() { # by Steve Losh$/;"	f
+prompts	zshuery.sh	/^prompts() {$/;"	f
+quit	zshuery.sh	/^    quit() {$/;"	f
+r	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+re	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+relaunch	zshuery.sh	/^    relaunch() {$/;"	f
+rot13	zshuery.sh	/^rot13() { echo $1 | tr "A-Za-z" "N-ZA-Mn-za-m" }$/;"	f
+rot47	zshuery.sh	/^rot47() { echo $1 | tr "\\!-~" "P-~\\!-O" }$/;"	f
+ruby_version	zshuery.sh	/^    ruby_version() { echo '' }$/;"	f
+ruby_version	zshuery.sh	/^    ruby_version() { rbenv version-name }$/;"	f
+ruby_version	zshuery.sh	/^    ruby_version() {$/;"	f
+ruslat	zshuery.sh	/^ruslat() { echo $1 | tr "йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ" "qwertyuiop[]asdfghjkl;'zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM" }$/;"	f
+selected	zshuery.sh	/^    selected() {$/;"	f
+settings	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+sha1	zshuery.sh	/^sha1() { echo -n $1 | openssl sha1 \/dev\/stdin }$/;"	f
+sha256	zshuery.sh	/^sha256() { echo -n $1 | openssl dgst -sha256 \/dev\/stdin }$/;"	f
+sha512	zshuery.sh	/^sha512() { echo -n $1 | openssl dgst -sha512 \/dev\/stdin }$/;"	f
+sparrow	zshuery.sh	/^    sparrow() {$/;"	f
+stdout	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+str	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+sub	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+sys	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
+up	zshuery.sh	/^up() { # https:\/\/gist.github.com\/1474072$/;"	f
+update_terminal_cwd	zshuery.sh	/^            update_terminal_cwd() { print -Pn "\\e]2;%~\\a" };;$/;"	f
+update_terminal_cwd	zshuery.sh	/^            update_terminal_cwd() { print -Pn "\\e]l%~\\e\\\\" };;$/;"	f
+update_terminal_cwd	zshuery.sh	/^            update_terminal_cwd() {};;$/;"	f
+update_terminal_cwd	zshuery.sh	/^    update_terminal_cwd() {$/;"	f
+urldecode	zshuery.sh	/^urldecode() { python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])" $1 }$/;"	f
+urlencode	zshuery.sh	/^urlencode() { python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])" $1 }$/;"	f
+virtualenv_info	zshuery.sh	/^virtualenv_info() {$/;"	f
+vol	zshuery.sh	/^    vol() {$/;"	f
+write	completion/_manage.py	/^                                          .stdout.write(str(re.sub(r'^%s\\.(.*?)$' %$/;"	i
