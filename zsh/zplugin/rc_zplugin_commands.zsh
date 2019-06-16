@@ -3,9 +3,14 @@
 
 
 # install alien minimal and its dependencies
-zplugin load chrissicool/zsh-256color
-zplugin load eendroroy/promptlib-zsh
-zplugin load eendroroy/alien-minimal
+# zplugin load chrissicool/zsh-256color
+# zplugin load eendroroy/promptlib-zsh
+# zplugin load eendroroy/alien-minimal
+
+
+# install pure
+zplugin ice pick"async.zsh" src"pure.zsh"
+zplugin light sindresorhus/pure
 
 # Setup OMZ theme
 
