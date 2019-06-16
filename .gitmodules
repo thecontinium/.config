@@ -10,3 +10,6 @@
 [submodule "tmux/plugins/better-mouse"]
 	path = tmux/plugins/better-mouse
 	url = https://github.com/NHDaly/tmux-better-mouse-mode.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/thecontinium/vim-config.git
