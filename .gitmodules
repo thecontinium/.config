@@ -1,15 +1,20 @@
 [submodule "tmux/plugins/extrakto"]
 	path = tmux/plugins/extrakto
 	url = https://github.com/laktak/extrakto.git
+	branch = master
 [submodule "tmux/plugins/pass"]
 	path = tmux/plugins/pass
 	url = https://github.com/rafi/tmux-pass.git
+	branch = master
 [submodule "tmux/plugins/fingers"]
 	path = tmux/plugins/fingers
 	url = https://github.com/Morantron/tmux-fingers.git
+	branch = master
 [submodule "tmux/plugins/better-mouse"]
 	path = tmux/plugins/better-mouse
 	url = https://github.com/NHDaly/tmux-better-mouse-mode.git
+	branch = master
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/thecontinium/vim-config.git
+	branch = master
