@@ -7,3 +7,6 @@
 [submodule "tmux/plugins/fingers"]
 	path = tmux/plugins/fingers
 	url = https://github.com/Morantron/tmux-fingers.git
+[submodule "tmux/plugins/better-mouse"]
+	path = tmux/plugins/better-mouse
+	url = https://github.com/NHDaly/tmux-better-mouse-mode.git
