@@ -1,4 +1,5 @@
 session_name: 'clojure'
+config: ~/.config/tmux/tmux.conf
 windows:
 - focus: 'true'
   layout: ed39,195x36,0,0[195x18,0,0{97x18,0,0,0,97x18,98,0,2},195x17,0,19,1]
