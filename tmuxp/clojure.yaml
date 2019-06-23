@@ -1,0 +1,14 @@
+session_name: 'clojure'
+windows:
+- focus: 'true'
+  layout: ed39,195x36,0,0[195x18,0,0{97x18,0,0,0,97x18,98,0,2},195x17,0,19,1]
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /Users/matthew/Dev/clojure/clojure-noob/src/clojure_noob
+    - nvim
+  - shell_command:
+    - cd /Users/matthew/Dev/clojure/clojure-noob
+    - lein repl
+  - shell_command:
+    - cd /Users/matthew
