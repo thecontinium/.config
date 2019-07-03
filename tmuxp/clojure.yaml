@@ -6,10 +6,8 @@ windows:
   panes:
   - focus: 'true'
     shell_command:
-    - cd /Users/matthew/Dev/clojure/clojure-noob/src/clojure_noob
-    - nvim
+    - cd src
+    - nvim ./**/*.clj
   - shell_command:
-    - cd /Users/matthew/Dev/clojure/clojure-noob
     - lein repl
   - shell_command:
-    - cd /Users/matthew
