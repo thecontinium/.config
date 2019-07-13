@@ -1,0 +1,10 @@
+session_name: markdown
+windows:
+- window_name: nv
+  layout: main-vertical
+  shell_command_before:
+    - cd ~/Dropbox/notesy/
+  panes:
+    - shell_command:
+        - nvim
+    - shell_command:
