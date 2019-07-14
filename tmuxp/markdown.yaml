@@ -6,5 +6,6 @@ windows:
     - cd ~/Dropbox/notesy/
   panes:
     - shell_command:
-        - nvim
+      - nvim -c "set ft=markdown"
+      focus: true
     - shell_command:
