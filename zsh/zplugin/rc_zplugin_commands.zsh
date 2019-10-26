@@ -18,8 +18,8 @@ zplugin light sindresorhus/pure
 #zplugin snippet OMZ::lib/git.zsh
 
 # Load Git plugin from OMZ
-#zplugin snippet OMZ::plugins/git/git.plugin.zsh
-#zplugin cdclear -q # <- forget completions provided up to this moment
+zplugin snippet OMZ::plugins/git/git.plugin.zsh
+zplugin cdclear -q # <- forget completions provided up to this moment
 
 #setopt promptsubst
 
