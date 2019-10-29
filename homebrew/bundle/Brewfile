@@ -1,0 +1,64 @@
+tap "borkdude/brew"
+tap "candid82/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "thecontinium/brewupdate"
+tap "thecontinium/marked-archive-preprocessor"
+tap "thecontinium/setup-xdg-env"
+tap "thecontinium/setup-zsh-env"
+tap "thecontinium/shutdownvbox"
+tap "universal-ctags/universal-ctags"
+cask "adoptopenjdk"
+brew "autopep8"
+brew "clojure"
+brew "findutils"
+brew "fzf"
+brew "git"
+brew "leiningen"
+brew "mas"
+brew "utf8proc"
+brew "neovim", args: ["HEAD"]
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "reattach-to-user-namespace"
+brew "terminal-notifier"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
+brew "z"
+brew "zsh"
+brew "borkdude/brew/clj-kondo"
+brew "candid82/brew/joker"
+brew "thecontinium/brewupdate/brew-update"
+brew "thecontinium/marked-archive-preprocessor/marked-archive-preprocessor"
+brew "thecontinium/setup-xdg-env/setup-xdg-env"
+brew "thecontinium/setup-zsh-env/setup-zsh-env"
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD", "with-jansson"]
+cask "firefox"
+cask "font-dejavu-sans-mono-for-powerline"
+cask "font-hack-nerd-font"
+cask "istat-menus"
+cask "iterm2"
+cask "karabiner-elements"
+cask "launchcontrol"
+cask "marked"
+cask "moom"
+cask "srware-iron"
+mas "Airmail", id: 918858936
+mas "GarageBand", id: 682658836
+mas "Habitify", id: 1140787122
+mas "iMovie", id: 408981434
+mas "KeyKey", id: 1035137927
+mas "Kindle", id: 405399194
+mas "LinCastor Browser", id: 1037256618
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Notability", id: 736189492
+mas "PathSnagger 2", id: 722364475
+mas "Slack", id: 803453959
+mas "tiny Reader", id: 1430856926
+mas "TNEF's Enough", id: 986621173
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
