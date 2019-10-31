@@ -5,6 +5,8 @@ local -A ZPLGM   # initial Zplugins hash definition, then:
 ZPLGM[HOME_DIR]=${XDG_CACHE_HOME}/zplugin
 ZPLGM[BIN_DIR]=$ZPLGM[HOME_DIR]/bin
 ZPLGM[ZCOMPDUMP_PATH]=${XDG_CACHE_HOME}/zplugin/.zcompdump
+ZPLGM[ZCOMPDUMP_PATH]=${XDG_CACHE_HOME}/zplugin/.zcompdump
+ZPLGM[COMPINIT_OPTS]="-C"
 
 # Check if zplugin is installed
 

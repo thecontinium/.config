@@ -9,8 +9,7 @@
 
 
 # install pure
-zplugin ice pick"async.zsh" src"pure.zsh"
-zplugin light sindresorhus/pure
+zplugin ice pick"async.zsh" src"pure.zsh"; zplugin light sindresorhus/pure
 
 # Setup OMZ theme
 
@@ -35,7 +34,7 @@ zplugin load zsh-users/zsh-autosuggestions
 zplugin load zsh-users/zsh-syntax-highlighting
 zplugin load zdharma/fast-syntax-highlighting
 
-zplugin ice from"notabug"; zplugin load zdharma/zui
-zplugin light zdharma/zplugin-crasis
+# zplugin ice from"notabug"; zplugin load zdharma/zui
+# zplugin light zdharma/zplugin-crasis
 
 zplugin ice pick"*.*" as"command"; zplugin load $XDG_CONFIG_HOME/homebrew/bin/
