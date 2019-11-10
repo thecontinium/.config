@@ -3,4 +3,4 @@
 
 # To make use the correct configuration file we need to hard wire
 # the default location.
-export ATOM_HOME=$XDG_CACHE_HOME/atom
+#export ATOM_HOME=$XDG_CACHE_HOME/atom
