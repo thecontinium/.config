@@ -1,6 +1,5 @@
 atom-beautify@0.33.4
 atom-file-icons@0.7.1
-atom-terminal@0.8.0
 busy-signal@2.0.1
 clojure-party-repl@1.1.0
 ex-mode@0.18.0
@@ -17,6 +16,7 @@ lisp-paredit@0.6.0
 markdown-writer@2.11.9
 marked@0.1.10
 parinfer@1.23.0
+platformio-ide-terminal@2.10.0
 proto-repl@1.4.24
 rainbow-delimiters@2.1.2
 vim-mode-plus@1.36.2
