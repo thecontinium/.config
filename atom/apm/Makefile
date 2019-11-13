@@ -1,16 +1,34 @@
+ifndef $(packages)
+	packages=all
+endif
+
 default: install
 
 bundle:
-	@apm list -i --bare > packages
-	@cat packages
+	@apm list -i --bare > bundle
+
+list: bundle
+	@cat bundle
 
 install:
-	@apm install --packages-file packages
+	@rm -f all.packages
+	@cat *.packages > all.packages
+	@apm install --packages-file $(packages).packages
 
-uninstall:
-	@apm list -i --bare | sed 's/@.*//' | xargs apm uninstall
+uninstall: bundle
+	@rm -f all.packages
+	@cat *.packages > all.packages
+	@cat bundle | sed 's/@.*//' > .bundle-no-version
+	@cat $(packages).packages | sed 's/@.*//;/^ *$$/d'> .$(packages)-no-version
+	@grep -Fxf .$(packages)-no-version .bundle-no-version | xargs apm uninstall
+
+remove: bundle
+	@cat bundle | sed 's/@.*//' | xargs apm uninstall
 
 reinstall: uninstall install
+
+update:
+	@apm update
 
 upgrade: update
 
