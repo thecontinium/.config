@@ -28,7 +28,7 @@ remove: bundle
 reinstall: uninstall install
 
 update:
-	@apm update
+	@apm update -c
 
 upgrade: update
 
