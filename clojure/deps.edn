@@ -17,9 +17,9 @@
 
   ;; External dependencies
 
-  ;; :deps {
-  ;;   org.clojure/clojure {:mvn/version "1.10.1"}
-  ;; }
+  :deps {
+     org.clojure/clojure {:mvn/version "RELEASE"}
+  }
 
   ;; Aliases
 	;;   resolve-deps aliases (-R) affect dependency resolution, options:

@@ -32,4 +32,4 @@ update:
 
 upgrade: update
 
-.PHONY: install update upgrade uninstall bundle
+.PHONY: bundle list install uninstall remove reinstall update upgrade
