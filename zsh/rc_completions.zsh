@@ -35,9 +35,3 @@ zstyle ':completion:*:ogg123:*' file-patterns '*.(ogg|OGG):ogg\ files *(-/):dire
 zstyle ':completion:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 zstyle ':completion:*:*:*:processes' command "ps -u `whoami` -o pid,user,comm -w -w"
 
-zplugin ice blockfs; zplugin load zsh-users/zsh-completions
-# The following command will make sure that the homebrew completions are added
-# to the list of zplugin completions and will in turn call compinit to turn
-# completions on and create the .zcompdump file in the location defined by ZPLGM[ZCOMPDUMP_PATH]
-# If homebrew is not installed then zpcompinti is called i.e. autoload compinit; compinit (also respecting $ZPLGM[ZCOMPDUMP_PATH])
-has_brew && zplg creinstall -q /usr/local/Homebrew/completions/zsh || zpcompinit
