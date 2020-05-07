@@ -39,6 +39,7 @@ zinit wait'!' lucid for \
   atinit"zicompinit; zicdreplay -q" zdharma/fast-syntax-highlighting \
   atload"_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
   blockf atpull"zinit creinstall -q ." zsh-users/zsh-completions \
+  as"completion" https://github.com/alacritty/alacritty/blob/master/extra/completions/_alacritty \
   if"has_brew" blockf atload"zinit creinstall -q ." $(brew --prefix)/share/zsh/site-functions
 
 #zinit load yous/vanilli.sh
