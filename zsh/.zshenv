@@ -9,6 +9,18 @@ if [ -x /usr/libexec/path_helper ]; then
 	eval `/usr/libexec/path_helper -s`
 fi
 
+
+
+
+# XDG directories
+# These are setup here so that the following command can be used to connect
+# remotely
+# ssh -t user@host 'export ZDOTDIR=$HOME/.config/zsh; usr/local/bin/zsh -l'
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_RUNTIME_DIR=/tmp/run
+
 # all of our zsh files ordering by the base file name so that they are not
 # ordered by the directory structure
 typeset -U config_files
