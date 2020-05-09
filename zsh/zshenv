@@ -1,0 +1,14 @@
+# uncomment the line below to stop any output being printed by each file that is sourced
+unset CONFIG_ZSH_SHOW_EXECUTING
+
+# Output the file name if it is executed at login
+[[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
+
+# Output the file name if it is being executed at login
+if [[ -v CONFIG_ZSH_DRY_RUN ]]
+then
+  echo ${(%):-%N}
+else
+  # if the directory exists setup zsh startup files to be in XDG standard location
+  [[ -v HOME ]] && [[ -d $HOME/.config/zsh ]] && export ZDOTDIR=$HOME/.config/zsh
+fi
