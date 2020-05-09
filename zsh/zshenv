@@ -4,7 +4,7 @@ unset CONFIG_ZSH_SHOW_EXECUTING
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
-# Output the file name if it is being executed at login
+# Output the file name if it is a dry run else setup ZDOTDIR
 if [[ -v CONFIG_ZSH_DRY_RUN ]]
 then
   echo ${(%):-%N}
