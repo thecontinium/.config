@@ -17,7 +17,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>CheckTestRelease</key>
-	<true/>
+	<false/>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>Custom Color Presets</key>
@@ -1285,9 +1285,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>399 40 2530 1301 0 0 2560 1417 </string>
+	<string>537 437 570 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>60 180 2523 1007 0 0 2560 1417 </string>
+	<string>426 475 871 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>159 244 570 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -1299,13 +1299,13 @@
 	<key>NSWindow Frame iTerm Window 14</key>
 	<string>638 760 570 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>956 356 1193 377 0 0 2560 1417 </string>
+	<string>908 259 570 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>963 254 1151 377 0 0 2560 1417 </string>
+	<string>332 904 1445 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>83 430 1368 643 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>1334 874 570 377 0 0 2560 1417 </string>
+	<string>143 222 2250 755 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>1114 579 570 377 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
@@ -1958,23 +1958,26 @@
 	<array>
 		<string>3.3.3beta1</string>
 		<string>3.3.8beta3</string>
+		<string>3.3.9beta1</string>
 		<string>3.3.7beta1</string>
-		<string>3.3.0beta11</string>
 		<string>3.3.8beta5</string>
 		<string>3.3.7beta3</string>
-		<string>3.3.0beta13</string>
-		<string>3.3.0beta14</string>
-		<string>3.3.0beta15</string>
 		<string>3.3.3beta2</string>
-		<string>3.3.0beta16</string>
 		<string>3.3.0beta1</string>
+		<string>3.3.0beta16</string>
+		<string>3.3.0beta15</string>
+		<string>3.3.0beta14</string>
+		<string>3.3.0beta13</string>
 		<string>3.3.5beta3</string>
+		<string>3.3.0beta11</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4beta1</string>
 		<string>3.3.2beta2</string>
 		<string>3.3.7beta4</string>
 		<string>3.3.8beta1</string>
 		<string>3.3.8beta4</string>
+		<string>3.3.10beta1</string>
+		<string>3.3.10beta2</string>
 	</array>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
@@ -1985,7 +1988,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{682, 1133}</string>
+		<string>{516, 1224}</string>
 	</dict>
 	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
@@ -1996,7 +1999,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>501485124.538899</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>173</integer>
+	<integer>183</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2794,11 +2797,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing_new.xml?shard=96</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=96</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-02-10T07:00:49Z</date>
+	<date>2020-03-08T15:46:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -2828,6 +2831,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.8beta5</string>
+	<string>3.3.10beta2</string>
 </dict>
 </plist>
