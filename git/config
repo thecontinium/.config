@@ -2,7 +2,9 @@
   name = thecontinium
   email = thecontinium@outlook.com
 [includeIf "gitdir:~/Dev/mn-dimension/"]
-  path = ~/.config/git/dimension
+  path = ~/.config/git/mn-dimension
+[includeIf "gitdir:~/Dev/mn-lambda-insight/"]
+  path = ~/.config/git/-mn-lambda-insight
 [filter "media"]
   required = true
   clean = git media clean %f
