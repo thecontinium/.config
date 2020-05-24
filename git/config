@@ -1,24 +1,23 @@
 [user]
-  name = thecontinium
-  email = thecontinium@outlook.com
+    name = thecontinium
+    email = thecontinium@outlook.com
 [includeIf "gitdir/i:~/dev/mn-dimension/"]
-  path = ~/.config/git/mn-dimension
+    path = ~/.config/git/mn-dimension
 [includeIf "gitdir/i:~/dev/mn-lambda-insight/"]
-  path = ~/.config/git/mn-lambda-insight
+    path = ~/.config/git/mn-lambda-insight
 [filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
 [core]
-  excludesfile = ~/.config/git/ignore
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
-[mergetool "sourcetree"]
-  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+    excludesfile = ~/.config/git/ignore
 [filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[pager]
+    show-branch = true
+    status = true
+    diff = diff-so-fancy | less --tabs=4,3
+    show = diff-so-fancy | less --tabs=1,3
