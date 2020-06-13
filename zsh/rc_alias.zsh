@@ -1,9 +1,6 @@
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
-alias ..='cd ..'
-alias ....='cd ../..'
-alias la='ls -la'
 if is_mac; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
     alias oo='open .' # open current dir in OS X Finder
@@ -14,5 +11,17 @@ alias s_smtp='python -m smtpd -n -c DebuggingServer localhost:1025' # SMTP test 
 alias wget='wget --no-check-certificate'
 alias pinst='sudo python setup.py install && sudo rm -r build && sudo rm -r dist && sudo rm -r *egg-info' # install a Python package
 alias beep='echo -n "\a"'
-alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 
+alias ..='cd ..'
+alias ....='cd ../..'
+# Use GNU ls on macOS instead of BSD
+hash gls 2>/dev/null && LS="gls" || LS="ls"
+
+# Listing directory contents
+alias ls='LC_COLLATE=C '$LS' --color=auto --group-directories-first'
+alias l='ls -CFa'
+alias ll='ls -alF'
+alias lsd='ls -Gal | grep ^d'
+alias la='ls -la'
+alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
+unset LS
