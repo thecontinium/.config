@@ -11,14 +11,39 @@
     smudge = git media smudge %f
 [core]
     excludesfile = ~/.config/git/ignore
+    pager = diff-so-fancy | less --tabs=2 -RFX
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[pull]
+    rebase = false
+[commit]
+    verbose = true
 [pager]
-    show-branch = true
-    diff = diff-so-fancy | less --tabs=4,3
-    show = diff-so-fancy | less --tabs=1,3
+	show-branch = true
+[status]
+	submodulesummary = true
+	showUntrackedFiles = all
+[fetch]
+	recurseSubmodules = true
+[push]
+	# Defines the action git push should take if no refspec is explicitly given:
+	# current = Push the current branch to update a branch with the same name on the receiving end
+	# See https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault
+	default = current
+	followTags = true
+[commit]
+	verbose = true
+[log]
+	date = iso
+	abbrevCommit = true
 [alias]
-	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+    # Take a snapshot of your current working tree without removing the changes from your tree.
+    # via http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+    snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+    snapshots = !git stash list --grep snapshot
+[submodule]
+    fetchJobs = 8
