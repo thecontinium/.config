@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# This will list all the installed applications that are not in the Brewfile
+echo "Installed but not in the Brewfile:"
+echo "-------------------"
+grep -F -v -f <(brew bundle list --all) <(brew bundle dump --file=-)
+echo "~~~~~~~~~~~~~~~~~~~"
+
+echo "In the Brewfile but not installed:"
+echo "-------------------"
+brew bundle check -v
+echo "~~~~~~~~~~~~~~~~~~~"
+
+echo "Outdated:"
+echo "-------------------"
+mas outdated
+brew cask outdated
+brew outdated
+echo "~~~~~~~~~~~~~~~~~~~"

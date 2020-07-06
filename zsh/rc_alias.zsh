@@ -12,8 +12,12 @@ alias wget='wget --no-check-certificate'
 alias pinst='sudo python setup.py install && sudo rm -r build && sudo rm -r dist && sudo rm -r *egg-info' # install a Python package
 alias beep='echo -n "\a"'
 
+# A quick way to get out of current directory
 alias ..='cd ..'
-alias ....='cd ../..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+
 # Use GNU ls on macOS instead of BSD
 hash gls 2>/dev/null && LS="gls" || LS="ls"
 
@@ -25,3 +29,10 @@ alias lsd='ls -Gal | grep ^d'
 alias la='ls -la'
 alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 unset LS
+
+hash gdircolors 2>/dev/null && alias dircolors=gdircolors
+hash gsort 2>/dev/null && alias sort=gsort
+
+# Head and tail will show as much possible without scrolling
+hash ghead 2>/dev/null && alias h='ghead -n $((${LINES:-12}-4))'
+hash gtail 2>/dev/null && alias t='gtail -n $((${LINES:-12}-4)) -s.1'
