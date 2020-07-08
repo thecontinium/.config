@@ -1,6 +1,9 @@
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
+## link the ssh config to the one in keys
+! [[ -h ~/.ssh/config ]] && [[ -a ~/.ssh/keys/config ]] && ln -sf ~/.ssh/keys/config ~/.ssh/config
+
 ## Use keychain to persist keys
 # https://github.com/funtoo/keychain
 if hash keychain 2>/dev/null; then
