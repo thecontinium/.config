@@ -8,7 +8,10 @@
 # https://github.com/funtoo/keychain
 if hash keychain 2>/dev/null; then
   # eval "$(keychain --dir "$XDG_CACHE_HOME/keychain" --eval --agents ssh -Q --quiet current)"
-  public_keys=$(ls -m ~/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' )
+  # cache the public keys every 24 hours
+  cached_public_keys="$XDG_CACHE_HOME/keys"
+  (! [[ -f $cached_public_keys ]] || test $(find $cached_public_keys -mtime 1)) && ls -m ~/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys
+  public_keys=$(cat $cached_public_keys)
   cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --agents ssh --quiet ${public_keys}"
   eval $(eval "${cmd}")
 fi
