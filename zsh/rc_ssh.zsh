@@ -4,7 +4,7 @@
 ## link the ssh config to the one in keys
 ! [[ -h ~/.ssh/config ]] && [[ -a ~/.ssh/keys/config ]] && ln -sf ~/.ssh/keys/config ~/.ssh/config
 
-## add home_key to authorized_keys if it is not there already
+## add home_key to authorized_keys if it is not there already.
 home_key = "{{ HOME_KEY }}"
 if [[ -f ~/.ssh/keys/${home_key}.pub ]]; then
   umask 0077
