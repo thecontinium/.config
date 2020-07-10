@@ -1,1 +1,1 @@
-zsh/rc_keychain filter=vault
+zsh/rc_ssh.zsh filter=vault
