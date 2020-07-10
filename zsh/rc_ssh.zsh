@@ -2,7 +2,7 @@
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
 ## link the ssh config to the one in keys
-! [[ -h ~/.ssh/config ]] && [[ -a ~/.ssh/keys/config ]] && ln -sf ~/.ssh/keys/config ~/.ssh/config
+! [[ -h ~/.ssh/config ]] && [[ -a ~/.ssh/keys/config ]] && ln -sf ~/.ssh/keys/config ~/.ssh/config && chmod 600 ~/.ssh/keys/config
 
 ## add home_key to authorized_keys if it is not there alreadtestingy
 home_key="{{ HOME_KEY }}"
@@ -19,7 +19,7 @@ if hash keychain 2>/dev/null; then
   # eval "$(keychain --dir "$XDG_CACHE_HOME/keychain" --eval --agents ssh -Q --quiet current)"
   # cache the public keys every 24 hours
   cached_public_keys="$XDG_CACHE_HOME/keys"
-  (! [[ -f $cached_public_keys ]] || test $(find $cached_public_keys -mtime 1)) && ls -m ~/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys
+  (! [[ -f $cached_public_keys ]] || test $(find $cached_public_keys -mtime 1)) && ls -m ~/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys && chmod 600 $(cat ${cached_public_keys}) && chmod 644 ~/.ssh/keys/*.pub
   public_keys=$(cat $cached_public_keys)
   cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --agents ssh --quiet ${public_keys}"
   eval $(eval "${cmd}")
