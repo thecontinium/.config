@@ -4,6 +4,15 @@
 ## link the ssh config to the one in keys
 ! [[ -h ~/.ssh/config ]] && [[ -a ~/.ssh/keys/config ]] && ln -sf ~/.ssh/keys/config ~/.ssh/config
 
+## add home_key if it is not there
+home_key = "{{ HOME_KEY }}"
+if [[ -f ~/.ssh/keys/${home_key}.pub ]]; then
+  umask 0077
+  mkdir -p ~/.ssh
+  touch ~/.ssh/authorized_keys
+  ! test $(grep -F -f ~/.ssh/keys/${home_key}.pub ~/.ssh/authorized_keys) && cat ~/.ssh/keys/${home_key}.pub >> ~/.ssh/authorized_keys
+fi
+
 ## Use keychain to persist keys
 # https://github.com/funtoo/keychain
 if hash keychain 2>/dev/null; then
