@@ -74,6 +74,8 @@ brew "clojure/tools/clojure", args: ["devel"]
 brew "thecontinium/brewupdate/brew-update"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD", "with-jansson"]
 cask "adoptopenjdk"
+cask "adoptopenjdk11"
+cask "adoptopenjdk12"
 cask "adoptopenjdk13"
 cask "alacritty"
 cask "atom"

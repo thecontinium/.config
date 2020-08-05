@@ -1,19 +1,26 @@
 #!/bin/bash
 
 # This will list all the installed applications that are not in the Brewfile
+brew bundle dump --file=-  | sed -E 's/^(mas "|cask "|brew "|tap ")//' | sed -E 's/".*$//' | sort  > /tmp/bundle-dump
+# brew bundle list --all | sort -r > /tmp/bundle-list
+export HOMEBREW_NO_AUTO_UPDATE=1
 echo "Installed but not in the Brewfile:"
-echo "-------------------"
-grep -F -v -f <(brew bundle list --all) <(brew bundle dump --file=-)
-echo "~~~~~~~~~~~~~~~~~~~"
+echo "--------------------------------------"
+# grep -Fvw -f <(cat /tmp/bundle-list) <(brew bundle dump --file=-)
+comm  -13 <(brew bundle list --all | sort) <(cat /tmp/bundle-dump)
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 echo "In the Brewfile but not installed:"
-echo "-------------------"
+echo "--------------------------------------"
 brew bundle check -v
-echo "~~~~~~~~~~~~~~~~~~~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 echo "Outdated:"
-echo "-------------------"
+echo "--------------------------------------"
+echo "---mas:"
 mas outdated
+echo "---cask:"
 brew cask outdated
+echo "---brew:"
 brew outdated
-echo "~~~~~~~~~~~~~~~~~~~"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
