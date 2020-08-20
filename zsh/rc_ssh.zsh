@@ -19,6 +19,9 @@ if (! [[ -f $cached_public_keys ]] || test $(find $cached_public_keys -mtime +1)
   ls -m ${HOME}/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys
   chmod 600 $(cat ${cached_public_keys}) ${HOME}/.ssh/keys/config
   chmod 644 ${HOME}/.ssh/keys/*.pub
+  # add them to osx keychain; this will require no input if already added
+  echo "Add any new keys to MacOs keychain:"
+  for key in $(cat "${cached_public_keys}"); do ssh-add -qK ${key} 2>/dev/null; done
 fi
 
 ## Use keychain to persist keys https://github.com/funtoo/keychain
