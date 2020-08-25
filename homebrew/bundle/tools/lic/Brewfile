@@ -6,6 +6,7 @@ cask "little-snitch"
 cask "marked"
 cask "moom"
 cask "omnifocus"
+cask "1password"
 mas "Airmail 3", id: 918858936
 mas "Habitify", id: 1140787122
 mas "Notability", id: 736189492
