@@ -4,14 +4,6 @@ unset CONFIG_ZSH_SHOW_EXECUTING
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
-# system-wide environment settings for zsh(1)
-if [ -x /usr/libexec/path_helper ]; then
-	eval `/usr/libexec/path_helper -s`
-fi
-
-
-
-
 # XDG directories
 # These are setup here so that the following command can be used to connect
 # remotely
@@ -25,7 +17,6 @@ export XDG_RUNTIME_DIR=/tmp/run
 # ordered by the directory structure
 typeset -U config_files
 export CONFIG_ZSH_FILES=($XDG_CONFIG_HOME/***/*.zsh(oe['REPLY=${REPLY:t}']))
-
 
 # load the env files
 for file in ${(M)CONFIG_ZSH_FILES:#*/env_*.zsh}
