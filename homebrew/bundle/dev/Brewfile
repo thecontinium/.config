@@ -74,7 +74,6 @@ brew "prometheus"
 brew "pyenv-virtualenv"
 brew "python"
 brew "reattach-to-user-namespace"
-brew "rmtrash"
 brew "rust"
 brew "terminal-notifier", args: ["HEAD"]
 brew "the_silver_searcher"
