@@ -20,7 +20,7 @@ echo "--------------------------------------"
 echo "---mas:"
 mas outdated
 echo "---cask:"
-brew cask outdated
+brew outdated --cask
 echo "---brew:"
 brew outdated
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
