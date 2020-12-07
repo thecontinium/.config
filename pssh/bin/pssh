@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/pssh -h ~/Resilio\ Sync/app/pssh/hosts -t 0 --inline-stdout "$@"
