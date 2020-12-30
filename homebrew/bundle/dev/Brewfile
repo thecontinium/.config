@@ -16,8 +16,6 @@ tap "thecontinium/brewupdate"
 tap "universal-ctags/universal-ctags"
 tap "wfxr/code-minimap"
 tap "adoptopenjdk/openjdk"
-tap "mscharley/homebrew"
-brew "alacritty", args: ["HEAD", "formula"]
 brew "autoconf"
 brew "automake"
 brew "bash"
@@ -108,6 +106,7 @@ cask "font-jetbrains-mono"
 cask "iterm2"
 cask "mongodb-compass"
 cask "superduper"
+cask "alacritty"
 mas "Keynote", id: 409183694
 mas "LinCastor Browser", id: 1037256618
 mas "Numbers", id: 409203825
