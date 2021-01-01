@@ -1,0 +1,7 @@
+brew "chafa"
+brew "glow"
+brew "hexyl"
+brew "lf"
+brew "media-info"
+brew "pandoc"
+brew "w3m"

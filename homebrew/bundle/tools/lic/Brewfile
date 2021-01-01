@@ -8,6 +8,7 @@ cask "moom"
 cask "omnifocus"
 cask "1password"
 cask "switchresx"
+cask "resilio-sync"
 mas "Airmail", id: 918858936
 mas "Habitify", id: 1140787122
 mas "Notability", id: 736189492

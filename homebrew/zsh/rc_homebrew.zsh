@@ -3,3 +3,4 @@
 
 # make brew a function that calls our overide funcion
 zinit ice fbin"brew"; zinit load ${XDG_CONFIG_HOME}/homebrew/bin/
+zinit ice fbin"missing"; zinit load ${XDG_CONFIG_HOME}/homebrew/bin/
