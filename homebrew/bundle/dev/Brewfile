@@ -79,6 +79,7 @@ brew "prometheus"
 brew "pyenv-virtualenv"
 brew "python"
 brew "python@3.8"
+brew "python@3.9"
 brew "reattach-to-user-namespace"
 brew "rust"
 brew "terminal-notifier", args: ["HEAD"]
