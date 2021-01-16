@@ -11,7 +11,21 @@
 
 # Make sure that the thumbs plugin is built
 tpd="$XDG_CONFIG_HOME/tmux/plugins/thumbs"
-if [ -d "$tpd" ] && [ ! -f "$tpd/target/release/thumbs" ]; then
-  echo "Building tmux thumbs plugin"
-  cd "$tpd" && cargo build --release --target-dir=target
+if [ -d "$tpd" ] ; then
+	exe="$tpd/target/release/thumbs"
+	build=false
+	if [ ! -f "$exe" ] ; then
+		build=true
+	else
+		commit_dt=$(cd $tpd; git --no-pager log -1 --format="%at")
+		build_dt=$(stat --format=%Y ${exe})
+		if [ $build_dt -lt $commit_dt ] ; then
+			build=true
+		fi
+	fi
+	if [ $build = true ] ; then
+		echo "Building tmux thumbs plugin"
+		echo $(cd "$tpd"; cargo build --release --target-dir=target)
+	fi
 fi
+
