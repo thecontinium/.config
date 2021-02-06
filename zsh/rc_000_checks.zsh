@@ -1,7 +1,7 @@
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
-is_mac() { [[ $OSTYPE == darwin* ]] }
+is_mac() { [[ "$(uname -s)" == "Darwin" ]] }
 is_freebsd() { [[ $OSTYPE == freebsd* ]] }
 is_linux() { [[ $OSTYPE == linux-gnu ]] }
 
