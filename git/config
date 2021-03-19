@@ -47,3 +47,5 @@
     snapshots = !git stash list --grep snapshot
 [submodule]
     fetchJobs = 8
+[init]
+	defaultBranch = main
