@@ -64,6 +64,7 @@ brew "reattach-to-user-namespace"
 brew "rust"
 brew "terminal-notifier", args: ["HEAD"]
 brew "the_silver_searcher"
+brew "shellcheck"
 brew "pssh"
 brew "tmux"
 brew "tmux-mem-cpu-load"
