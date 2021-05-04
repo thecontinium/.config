@@ -6,8 +6,6 @@ unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
-# set nice man pages
-if command -v most > /dev/null 2>&1; then
-    export PAGER="most"
-fi
+export PAGER=less
+export LESS="-FiQMXR"
 
