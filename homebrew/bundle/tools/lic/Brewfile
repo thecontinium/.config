@@ -10,8 +10,8 @@ cask "1password"
 cask "switchresx"
 cask "resilio-sync"
 mas "Airmail", id: 918858936
-mas "Habitify", id: 1140787122
-mas "Notability", id: 736189492
+mas "Habitify", id: 1111447047
+mas "Notability", id: 360593530
 mas "PCalc", id: 403504866
 mas "Slack", id: 803453959
 mas "Calory", id: 1476831360
