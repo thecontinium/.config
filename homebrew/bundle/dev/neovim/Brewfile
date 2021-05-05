@@ -1,4 +1,6 @@
+tap "jason0x43/neovim-nightly"
 brew "cmake"
 brew "luarocks"
 brew "pkg-config"
-brew "neovim", args: ["HEAD"]
+brew "neovim"
+cask "neovim-nightly"
