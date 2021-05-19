@@ -19,6 +19,8 @@
 
   :deps {
      org.clojure/clojure {:mvn/version "RELEASE"}
+     nrepl/nrepl         {:mvn/version "RELEASE"}
+     cider/cider-nrepl   {:mvn/version "RELEASE"}
   }
 
   ;; Aliases
