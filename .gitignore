@@ -1,2 +1,4 @@
 *~
 smudge.sed
+.lsp/sqlite*
+clojure/.cpcache
