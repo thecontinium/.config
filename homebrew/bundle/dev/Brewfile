@@ -69,6 +69,8 @@ brew "terminal-notifier", args: ["HEAD"]
 brew "the_silver_searcher"
 brew "shellcheck"
 brew "markdownlint-cli"
+brew "eslint"
+brew "prettier"
 brew "pssh"
 brew "tmux"
 brew "tmux-mem-cpu-load"
