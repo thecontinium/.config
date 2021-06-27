@@ -17,11 +17,11 @@
 
   ;; External dependencies
 
-  :deps {
-     org.clojure/clojure {:mvn/version "RELEASE"}
-     nrepl/nrepl         {:mvn/version "RELEASE"}
-     cider/cider-nrepl   {:mvn/version "RELEASE"}
-  }
+  ; :deps {
+  ;    org.clojure/clojure {:mvn/version "RELEASE"}
+  ;    nrepl/nrepl         {:mvn/version "RELEASE"}
+  ;    cider/cider-nrepl   {:mvn/version "RELEASE"}
+  ; }
 
   ;; Aliases
 	;;   resolve-deps aliases (-R) affect dependency resolution, options:
@@ -36,19 +36,19 @@
   ;;   :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.7.527"}}}
   ;;   :test {:extra-paths ["test"]}
   ;; }
-  :aliases {:rebl {:extra-deps {
-    org.clojure/core.async      {:mvn/version "RELEASE"}
-    org.clojure/data.csv        {:mvn/version "RELEASE"}
-    org.clojure/data.json       {:mvn/version "RELEASE"}
-    org.yaml/snakeyaml          {:mvn/version "RELEASE"}
-    com.cognitect/rebl          {:local/root  ".cache/clojure/resources/rebl/REBL-0.9.220.jar"}
-    org.openjfx/javafx-fxml     {:mvn/version "RELEASE"}
-    org.openjfx/javafx-controls {:mvn/version "RELEASE"}
-    org.openjfx/javafx-graphics {:mvn/version "RELEASE"}
-    org.openjfx/javafx-media    {:mvn/version "RELEASE"}
-    org.openjfx/javafx-swing    {:mvn/version "RELEASE"}
-    org.openjfx/javafx-base     {:mvn/version "RELEASE"}
-    org.openjfx/javafx-web      {:mvn/version "RELEASE"}}}}
+  ; :aliases {:rebl {:extra-deps {
+  ;   org.clojure/core.async      {:mvn/version "RELEASE"}
+  ;   org.clojure/data.csv        {:mvn/version "RELEASE"}
+  ;   org.clojure/data.json       {:mvn/version "RELEASE"}
+  ;   org.yaml/snakeyaml          {:mvn/version "RELEASE"}
+  ;   com.cognitect/rebl          {:local/root  ".cache/clojure/resources/rebl/REBL-0.9.220.jar"}
+  ;   org.openjfx/javafx-fxml     {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-controls {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-graphics {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-media    {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-swing    {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-base     {:mvn/version "RELEASE"}
+  ;   org.openjfx/javafx-web      {:mvn/version "RELEASE"}}}}
 
   ;; Provider attributes
 
