@@ -1,6 +1,6 @@
 tap "jason0x43/neovim-nightly"
+# cask "neovim-nightly"
 brew "cmake"
 brew "luarocks"
 brew "pkg-config"
-# brew "neovim"
-cask "neovim-nightly"
+brew "neovim"
