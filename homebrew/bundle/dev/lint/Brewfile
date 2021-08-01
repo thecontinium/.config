@@ -1,0 +1,8 @@
+brew "proselint"
+brew "write-good"
+brew "shellcheck"
+brew "markdownlint-cli"
+brew "eslint"
+brew "prettier"
+brew "hadolint"
+brew "yarn"
