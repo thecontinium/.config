@@ -11,7 +11,7 @@ ZINIT[COMPINIT_OPTS]="-C"
 
 if [[ ! -d $ZINIT[HOME_DIR] ]]; then
    mkdir $ZINIT[HOME_DIR]
-   git clone https://github.com/zdharma/zinit.git $ZINIT[BIN_DIR]
+   git clone https://github.com//zdharma-continuum/zinit.git $ZINIT[BIN_DIR]
 fi
 
 ### Added by Zinit's installer
