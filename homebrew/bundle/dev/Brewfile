@@ -67,6 +67,7 @@ brew "rust"
 brew "terminal-notifier", args: ["HEAD"]
 brew "the_silver_searcher"
 brew "ripgrep"
+brew "gnu-sed"
 brew "pssh"
 brew "tmux"
 brew "tmux-mem-cpu-load"
