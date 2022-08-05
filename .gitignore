@@ -2,3 +2,5 @@
 smudge.sed
 .lsp/sqlite*
 clojure/.cpcache
+.clj-kondo/
+.lsp/
