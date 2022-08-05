@@ -4,5 +4,5 @@
 # To make tmuxp use the correct configuration file for tmux we need to hard wire
 # the default location for tmux.
 # We do this if the .tmux.conf file does not exist in out home directory
-! [[ -a  $HOME/.markdownlintrc ]] && ln -s $XDG_CONFIG_HOME/markdownlint/.markdownlint.yaml $HOME/.markdownlintrc
+! [[ -a  $HOME/.markdownlintrc ]] && ln -s $XDG_CONFIG_HOME/markdownlint/markdownlint.json $HOME/.markdownlintrc
 
