@@ -24,7 +24,6 @@ window:
 
 font:
   # glyph_offset: { x: 0, y: -1 }
-  use_thin_strokes: false
   size: 12
   normal: { family: Hack Nerd Font, style: Regular }
   bold:   { family: Hack Nerd Font, style: Regular }
