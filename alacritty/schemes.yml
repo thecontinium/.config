@@ -6,9 +6,9 @@ schemes:
   rafi: &rafi
     cursor:
       text: '0x000000'
-      cursor: '0xEF4CDB'
+      # cursor: '0xEF4CDB'
       # cursor: '0xCA24AC'
-      # cursor: '0x4cef51'
+      cursor: '0x4cef51'
 
     vi_mode_cursor:
       text: '#000000'

@@ -91,4 +91,4 @@ key_bindings:
   # - { key: Down,                    chars: "\x1b[B",   mode: ~AppCursor  }
   # - { key: Down,                    chars: "\x1bOB",   mode: AppCursor   }
   # - { key: F1,                      chars: "\x1bOP"                      }
-  # - { key: F2,                      chars: "\x1bOQ"                      }---
+  # - { key: F2,                      chars: "\x1bOQ"                      }
