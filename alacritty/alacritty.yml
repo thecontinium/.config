@@ -19,7 +19,7 @@ env:
   TERM: alacritty
 
 window:
-  decorations: none
+  decorations: buttonless
   padding: { x: 3, y: 3 }
 
 font:
