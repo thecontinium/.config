@@ -1,8 +1,0 @@
-brew "stylua"
-brew "shellcheck"
-brew "vint"
-brew "markdownlint-cli"
-brew "shfmt"
-brew "shellharden"
-brew "hadolint"
-brew "proselint"
