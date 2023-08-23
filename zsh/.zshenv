@@ -13,6 +13,8 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_RUNTIME_DIR=/tmp/run
 
+mkdir -p $XDG_RUNTIME_DIR
+
 # all of our zsh files ordering by the base file name so that they are not
 # ordered by the directory structure
 typeset -U config_files
