@@ -41,10 +41,10 @@ zinit wait'!' lucid for \
   atinit"zicompinit; zicdreplay -Q" zdharma-continuum/fast-syntax-highlighting \
   atload"_zsh_autosuggest_start" zsh-users/zsh-autosuggestions \
   blockf atpull"zinit creinstall -Q ." zsh-users/zsh-completions \
-  as"completion" https://github.com/alacritty/alacritty/blob/master/extra/completions/_alacritty \
-  if"has_brew" blockf atload"zinit creinstall -Q ." $(brew --prefix)/share/zsh/site-functions
+  # as"completion" https://github.com/alacritty/alacritty/blob/master/extra/completions/_alacritty \
+  # if"has_brew" blockf atload"zinit creinstall -Q ." $(brew --prefix)/share/zsh/site-functions
 
-zinit load zdharma-continuum/zinit-annex-bin-gem-node 
+zinit load zdharma-continuum/zinit-annex-bin-gem-node
 
 #zinit load yous/vanilli.sh
 # zinit load djui/alias-tips
