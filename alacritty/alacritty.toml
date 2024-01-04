@@ -1,4 +1,4 @@
-import = ["/Users/matthew.newland/.config/alacritty/schemes/rafi.toml", "/Users/matthew.newland/.config/alacritty/bindings.toml"]
+import = ["~/.config/alacritty/schemes/rafi.toml", "~/.config/alacritty/bindings.toml"]
 live_config_reload = false
 
 [colors]
