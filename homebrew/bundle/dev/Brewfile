@@ -55,6 +55,7 @@ brew "node"
 brew "openjdk"
 brew "pyenv-virtualenv"
 brew "pyenv"
+brew "miniconda"
 brew "reattach-to-user-namespace"
 brew "rust"
 brew "terminal-notifier", args: ["HEAD"]
