@@ -3,5 +3,5 @@
 
 if is_mac; then
   # this belongs is an apple launchctl
-  defaults write com.apple.ScreenSharing DoNotSendSystemKeys -bool No
+  # defaults write com.apple.ScreenSharing DoNotSendSystemKeys -bool No
 fi
