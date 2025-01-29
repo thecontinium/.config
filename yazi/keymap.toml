@@ -29,7 +29,7 @@ prepend_keymap = [
 
 	# Goto, tabs and help
 	{ on = [ "g", "?" ], run = "help", desc = "Help" },
-	{ on = [ "g", "o" ], run = "cd ~/code", desc = "Go to code directory" },
+	{ on = [ "g", "o" ], run = "cd ~/dev", desc = "Go to code dev directory" },
 	{ on = [ "g", "t" ], run = "tab_switch 1 --relative", desc = "Switch to the next tab" },
 	{ on = [ "g", "T" ], run = "tab_switch -1 --relative", desc = "Switch to the previous tab" },
 
