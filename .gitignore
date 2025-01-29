@@ -4,3 +4,8 @@ smudge.sed
 clojure/.cpcache
 .clj-kondo/
 .lsp/
+/yazi/**/DO_NOT_MODIFY_ANYTHING_IN_THIS_DIRECTORY
+/yazi/**/*.png
+/yazi/**/README*
+/yazi/**/LICENSE*
+/yazi/plugins/
