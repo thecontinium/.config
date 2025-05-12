@@ -16,7 +16,7 @@ fi
 # cache the public keys every 24 hours
 cached_public_keys="$XDG_CACHE_HOME/keys"
 if (! [[ -f $cached_public_keys ]] || test $(find $cached_public_keys -mtime +1)); then
-  ls -m ${HOME}/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys
+  /bin/ls -m ${HOME}/.ssh/keys/*.pub | tr ',\n' ' ' | sed 's/.pub //g' > $cached_public_keys
   chmod 600 $(cat ${cached_public_keys}) ${HOME}/.ssh/keys/config
   chmod 644 ${HOME}/.ssh/keys/*.pub
   # add them to osx keychain; this will require no input if already added
