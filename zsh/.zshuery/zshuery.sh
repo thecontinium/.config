@@ -1,23 +1,6 @@
 # Output the file name if it is executed at login
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
-# jQuery did this for JS, we're doing it for zsh
-
-# Checks
-# is_mac() { [[ $OSTYPE == darwin* ]] }
-# is_freebsd() { [[ $OSTYPE == freebsd* ]] }
-# is_linux() { [[ $OSTYPE == linux-gnu ]] }
-
-# has_brew() { [[ -n ${commands[brew]} ]] }
-# has_apt() { [[ -n ${commands[apt-get]} ]] }
-# has_yum() { [[ -n ${commands[yum]} ]] }
-
-# DEPRECATED (!)
-# IS_MAC=`is_mac && echo 1 || echo 0`
-# IS_LINUX=`is_linux && echo 1 || echo 0`
-# HAS_BREW=`has_brew && echo 1 || echo 0`
-# HAS_APT=`has_apt && echo 1 || echo 0`
-# HAS_YUM=`has_yum && echo 1 || echo 0`
 
 # Settings
 load_defaults() {
@@ -65,51 +48,6 @@ fi
 if [[ -d /var/lib/gems/1.8/bin ]]; then # oh Debian/Ubuntu
     export PATH=$PATH:/var/lib/gems/1.8/bin
 fi
-# RVM or rbenv
-#if [[ -s $rvm_path/scripts/rvm ]]; then
-#    source $rvm_path/scripts/rvm
-#    RUBY_VERSION_PREFIX='r'
-#    ruby_version() {
-#        if [[ $RUBY_VERSION != "" ]]; then
-#            echo $RUBY_VERSION_PREFIX$RUBY_VERSION | sed s/ruby-//
-#        else echo ''; fi
-#    }
-#elif [[ -d $HOME/.rbenv ]]; then
-#    export PATH=$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH
-#    source $HOME/.rbenv/completions/rbenv.zsh
-#    rbenv rehash 2>/dev/null
-#    ruby_version() { rbenv version-name }
-#else
-#    ruby_version() { echo '' }
-#fi
-# Current directory in title
-#if [[ $TERM_PROGRAM == "Apple_Terminal" ]]; then
-#    update_terminal_cwd() {
-#        printf '\e]7;%s\a' "file://$HOST$(pwd | sed -e 's/ /%20/g')"
-#    }
-#else
-#    case $TERM in
-#        sun-cmd)
-#            update_terminal_cwd() { print -Pn "\e]l%~\e\\" };;
-#        *xterm*|rxvt|(dt|k|E)term)
-#            update_terminal_cwd() { print -Pn "\e]2;%~\a" };;
-#        *)
-#            update_terminal_cwd() {};;
-#    esac
-#fi
-# Prompt aliases for readability
-#USER_NAME='%n'
-#HOST_NAME='%m'
-#DIR='%~'
-#COLLAPSED_DIR() { # by Steve Losh
-#    echo $(pwd | sed -e "s,^$HOME,~,")
-#    local PWD_URL="file://$HOST_NAME${PWD// /%20}"
-#}
-
-# set nice man pages
-#if command -v most > /dev/null 2>&1; then
-#    export PAGER="most"
-#fi
 
 # Functions
 prompts() {
