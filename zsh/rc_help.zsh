@@ -2,7 +2,7 @@
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
 #Use zsh from homebrew
-unalias run-help
+(( ${+aliases[run-help]} )) && unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
