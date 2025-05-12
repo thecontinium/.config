@@ -22,13 +22,14 @@ if is_mac ; then
    hash gsort 2>/dev/null && alias sort='gsort'
    hash gstat 2>/dev/null && alias stat='gstat'
    hash gls 2>/dev/null && LSCMD='gls'
+   hash lsd 2>/dev/null && LSCMD='lsd'
 fi
 
 alias ls="LC_COLLATE=C ${LSCMD} --color=auto --group-directories-first"
 unset LSCMD
 alias l='ls -CFa'
 alias ll='ls -alF'
-alias lsd='ls -Gal | grep ^d'
+# alias lsd='ls -Gal | grep ^d'
 alias la='ls -la'
 alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 alias llh='ls -alFh'
@@ -96,7 +97,7 @@ alias -- -="cd -"
 
 # }}}
 # Jump around ------------------------------------------- z for jumping -- {{{
-alias cdf='cd "$(dirname "$(fzf)")"'
+alias cdfz='cd "$(dirname "$(fzf)")"'
 
 # }}}
 # File find ------------------------------------------------ f for find -- {{{
