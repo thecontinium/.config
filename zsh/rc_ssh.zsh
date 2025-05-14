@@ -28,7 +28,7 @@ fi
 if hash keychain 2>/dev/null; then
   # eval "$(keychain --dir "$XDG_CACHE_HOME/keychain" --eval --agents ssh -Q --quiet current)"
   public_keys=$(cat $cached_public_keys)
-  cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --agents ssh --quiet ${public_keys}"
+  cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --quiet ${public_keys}"
   eval $(eval "${cmd}")
 fi
 
