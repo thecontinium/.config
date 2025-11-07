@@ -1,7 +1,12 @@
-tap "jason0x43/neovim-nightly"
-# cask "neovim-nightly"
+# neovim
+brew "neovim"
+# neovim head build
 brew "cmake"
 brew "luarocks"
 brew "pkg-config"
-brew "neovim"
+# snacks image
 brew "imagemagick"
+# python matplotlib-backend-terminal
+brew "chafa"
+# jupytext.nvim
+brew "jupytext"

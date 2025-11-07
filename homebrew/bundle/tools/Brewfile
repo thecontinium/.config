@@ -1,8 +1,4 @@
-cask "appcleaner"
-cask "flux-app"
 cask "karabiner-elements"
-cask "lincastor"
-cask "onyx"
 cask "omnidisksweeper"
 cask "firefox"
 cask "cyberduck"

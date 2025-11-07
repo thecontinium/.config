@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # branches sorted by last commit date
-gbs() {
+gbS() {
   git branch -r "$@" | grep -v HEAD \
     | xargs -n 1 git log --color=always --no-merges -n 1 \
       --pretty="tformat:%C(yellow)%ci{%C(green)%ar{%C(blue)<%an>{%C(auto)%D%C(reset)" \
