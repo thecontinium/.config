@@ -79,7 +79,6 @@ brew "candid82/brew/joker"
 brew "clojure/tools/clojure"
 brew "polyfy/polylith/poly"
 brew "thecontinium/brewupdate/brew-update"
-brew "universal-ctags", args: ["HEAD"]
 cask "temurin"
 cask "temurin@11"
 cask "kitty"
