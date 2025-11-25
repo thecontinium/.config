@@ -4,6 +4,8 @@ brew "neovim"
 brew "cmake"
 brew "luarocks"
 brew "pkg-config"
+# nvim-treesitter
+brew "tree-sitter-cli"
 # snacks image
 brew "imagemagick"
 # snacks image svg conver by magick
