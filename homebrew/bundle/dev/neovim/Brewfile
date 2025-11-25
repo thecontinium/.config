@@ -9,7 +9,7 @@ brew "tree-sitter-cli"
 # snacks image
 brew "imagemagick"
 # snacks image svg conver by magick
-brew "inkscape"
+cask "inkscape"
 # snacks image latex
 brew "tectonic"
 # python matplotlib-backend-terminal
