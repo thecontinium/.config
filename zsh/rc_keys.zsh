@@ -5,6 +5,8 @@
 bindkey -v 
 bindkey '^?' backward-delete-char
 bindkey '^h' backward-delete-char
+# Use jj rather than esc to leave insert mode
+bindkey -M viins "jj" vi-cmd-mode
 
 # Set up/down arrow key search on history
 # autoload -U history-search-end
