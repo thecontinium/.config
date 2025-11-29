@@ -1,0 +1,6 @@
+brew "git"
+brew "git-gui"
+brew "git-delta"
+brew "gh"
+brew "lazygit"
+brew "nbdime"

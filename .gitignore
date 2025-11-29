@@ -4,11 +4,8 @@ smudge.sed
 clojure/.cpcache
 .clj-kondo/
 .lsp/
-/yazi/**/DO_NOT_MODIFY_ANYTHING_IN_THIS_DIRECTORY
-/yazi/**/*.png
-/yazi/**/README*
-/yazi/**/LICENSE*
-/yazi/plugins/
 **/bundle/cache/
 /ipython/profile_default/history.sqlite
 /ipython/profile_default/log/*
+/github-copilot/*
+/gh/*
