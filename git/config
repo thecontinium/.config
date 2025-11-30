@@ -27,7 +27,17 @@
 [pager]
 	show-branch = true
 [delta]
-    features = side-by-side diff-so-fancy dark
+    features = git
+[delta "git"]
+  side-by-side = true
+  diff-so-fancy  = true 
+  dark = true
+[delta "lazygit"]
+  dark = true
+  paging = never
+  line-numbers = true
+  hyperlinks = true
+  hyperlinks-file-link-format = "lazygit-edit://{path}:{line}"
 [status]
 	submodulesummary = true
 	showUntrackedFiles = all
