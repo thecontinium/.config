@@ -27,13 +27,13 @@ fi
 
 alias ls="LC_COLLATE=C ${LSCMD} --color=auto --group-directories-first"
 unset LSCMD
-alias l='ls -CFa'
+alias l='ls -Fa'
 alias ll='ls -alF'
 # alias lsd='ls -Gal | grep ^d'
 alias la='ls -la'
 alias lst="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 alias llh='ls -alFh'
-alias lld='ls -Gal --color=always | grep ^d --colour=never'
+alias lld='ll | grep "^d" --colour=never'
 # }}}
 # Editor --------------------------------------------------- e for edit -- {{{
 alias e='tmux split-window -h "$EDITOR"'
