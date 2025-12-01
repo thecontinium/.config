@@ -106,7 +106,7 @@ if ! hash fd 2>/dev/null; then
 	alias f='find . -iname '
 else
 	# Use https://github.com/sharkdp/fd
-	alias f=fd
+	alias f="fd $FD_OPTIONS"
 fi
 # }}}
 # OS Specific Network and Filesystem ------------------------------------- {{{

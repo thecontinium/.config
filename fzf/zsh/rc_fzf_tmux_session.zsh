@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+# Output the file name if it is executed at login
+[[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
+
 
 # tm - Create and attach new tmux session, or switch to existing one.
 # `tm` will allow you to select your tmux session via fzf.

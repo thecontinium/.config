@@ -1,0 +1,3 @@
+brew "fzf"
+brew "tree"
+brew "bat"
