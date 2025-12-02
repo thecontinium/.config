@@ -101,12 +101,12 @@ alias cdfz='cd "$(dirname "$(fzf)")"'
 
 # }}}
 # File find ------------------------------------------------ f for find -- {{{
-if ! hash fd 2>/dev/null; then
-	# Slow
-	alias f='find . -iname '
-else
-	# Use https://github.com/sharkdp/fd
+if command -v fzf >/dev/null 2>&1; then
+  alias f="fzf"
+elif command -v fd >/dev/null 2>&1; then
 	alias f="fd $FD_OPTIONS"
+else
+	alias f='find . -iname '
 fi
 # }}}
 # OS Specific Network and Filesystem ------------------------------------- {{{
