@@ -9,3 +9,4 @@ clojure/.cpcache
 /ipython/profile_default/log/*
 /github-copilot/*
 /gh/*
+/organize/config.yaml
