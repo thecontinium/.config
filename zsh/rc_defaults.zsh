@@ -2,7 +2,8 @@
 [[ -v  CONFIG_ZSH_SHOW_EXECUTING ]] && [[ $- == *i* ]] && echo now executing ${(%):-%N}
 
 autoload colors; colors;
-setopt auto_name_dirs
+# see https://github.com/sindresorhus/pure/issues/723 regarding problem with pyenv-virtualenv
+# setopt auto_name_dirs
 setopt pushd_ignore_dups
 setopt prompt_subst
 setopt no_beep
