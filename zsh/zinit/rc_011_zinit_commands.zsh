@@ -9,7 +9,7 @@
 
 
 # install pure
-zinit ice lucid atload'!prompt_pure_precmd' pick"async.zsh" src"pure.zsh"
+zinit ice pick"async.zsh" src"pure.zsh"
 zinit load sindresorhus/pure
 zstyle :prompt:pure:git:stash show yes
 
