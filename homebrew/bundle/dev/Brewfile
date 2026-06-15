@@ -1,13 +1,8 @@
-tap "buo/cask-upgrade"
-tap "candid82/brew"
+tap "buo/cask-upgrade", trusted: true
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "mongodb/brew"
-tap "mn-dimension/brew"
-tap "thecontinium/brewupdate"
-tap "thecontinium/tap"
-tap "wfxr/code-minimap"
-tap "rafi/tap"
+tap "mongodb/brew", trusted: true
+tap "mn-dimension/brew", trusted: true
 brew "autoconf"
 brew "automake"
 brew "bash"
@@ -34,7 +29,7 @@ brew "mn-dimension/brew/sendemail"
 brew "msmtp"
 brew "multimarkdown"
 brew "editorconfig"
-brew "wfxr/code-minimap/code-minimap"
+brew "code-minimap"
 brew "node"
 brew "openjdk"
 brew "pyenv-virtualenv"
@@ -56,8 +51,8 @@ brew "gnupg"
 brew "curl"
 brew "wget"
 brew "wakeonlan"
-brew "candid82/brew/joker"
-brew "thecontinium/brewupdate/brew-update"
+brew "candid82/brew/joker", trusted: true
+brew "thecontinium/brewupdate/brew-update", trusted: true
 cask "kitty"
 cask "font-dejavu-sans-mono-nerd-font"
 cask "font-hack"
@@ -80,4 +75,6 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
+mas "TestFlight", id: 899247664
+mas "The Unarchiver", id: 425424353
 mas "Fiery Feeds", id: 1158763303

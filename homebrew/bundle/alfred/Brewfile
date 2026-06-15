@@ -1,4 +1,3 @@
 # Calculate Anything time failing with php 8
 # brew link --overwrite --force shivammathur/php/php@8.4
-tap "shivammathur/php"
-brew "shivammathur/php/php@7.4", link: :overwrite
+brew "shivammathur/php/php@7.4", link: :overwrite, trusted: true

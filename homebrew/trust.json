@@ -1,0 +1,14 @@
+{
+  "trustedformulae": [
+    "candid82/brew/joker",
+    "morantron/tmux-fingers/tmux-fingers",
+    "polyfy/polylith/poly",
+    "shivammathur/php/php@7.4",
+    "thecontinium/brewupdate/brew-update"
+  ],
+  "trustedtaps": [
+    "buo/cask-upgrade",
+    "mn-dimension/brew",
+    "mongodb/brew"
+  ]
+}

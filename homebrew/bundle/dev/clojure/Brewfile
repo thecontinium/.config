@@ -1,7 +1,6 @@
-tap "polyfy/polylith"
 brew "leiningen"
 brew "mn-dimension/brew/leinexec"
-brew "polyfy/polylith/poly"
+brew "polyfy/polylith/poly", trusted: true
 brew "maven"
 brew "mise"
 brew "rlwrap"
