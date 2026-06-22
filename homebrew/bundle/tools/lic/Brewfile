@@ -1,11 +1,10 @@
 cask "alfred"
-cask "istat-server"
-cask "istat-menus"
-cask "launchcontrol"
-cask "marked-app"
-cask "moom"
+cask "istat-menus@5"
+cask "thecontinium/tap/launchcontrol@1", trusted: true
+cask "thecontinium/tap/marked-app@2", trusted: true
+cask "thecontinium/tap/moom@3", trusted: true
 cask "omnifocus"
-cask "1password"
+cask "1password@7"
 cask "switchresx"
 cask "resilio-sync"
 mas "Airmail", id: 918858936
