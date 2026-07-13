@@ -1,5 +1,5 @@
 cask "alfred"
-cask "istat-menus@5"
+cask "istat-menus@6"
 cask "thecontinium/tap/launchcontrol@1", trusted: true
 cask "thecontinium/tap/marked-app@2", trusted: true
 cask "thecontinium/tap/moom@3", trusted: true
