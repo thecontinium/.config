@@ -3,6 +3,7 @@
     "candid82/brew/joker",
     "mn-dimension/brew/sendemail",
     "morantron/tmux-fingers/tmux-fingers",
+    "oven-sh/bun/bun",
     "polyfy/polylith/poly",
     "shivammathur/php/php@7.4",
     "thecontinium/brewupdate/brew-update"

@@ -1,0 +1,6 @@
+brew "mise"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "uv"
+brew "oven-sh/bun/bun", trusted: true
+brew "mas"
