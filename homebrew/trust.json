@@ -1,7 +1,6 @@
 {
   "trustedformulae": [
     "candid82/brew/joker",
-    "mn-dimension/brew/sendemail",
     "morantron/tmux-fingers/tmux-fingers",
     "oven-sh/bun/bun",
     "polyfy/polylith/poly",
@@ -10,8 +9,7 @@
   ],
   "trustedtaps": [
     "buo/cask-upgrade",
-    "mn-dimension/brew",
-    "mongodb/brew"
+    "mn-dimension/brew"
   ],
   "trustedcasks": [
     "thecontinium/tap/launchcontrol@1",

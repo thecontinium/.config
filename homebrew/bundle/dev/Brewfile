@@ -1,7 +1,6 @@
 tap "buo/cask-upgrade", trusted: true
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "mongodb/brew", trusted: true
 tap "mn-dimension/brew", trusted: true
 brew "autoconf"
 brew "automake"
@@ -23,7 +22,6 @@ brew "hugo"
 brew "keychain"
 brew "lua"
 brew "miniupnpc"
-brew "mongodb/brew/mongodb-community"
 brew "mn-dimension/brew/sendemail"
 brew "msmtp"
 brew "multimarkdown"
@@ -63,7 +61,6 @@ cask "font-monaspace"
 cask "font-sauce-code-pro-nerd-font"
 cask "font-symbols-only-nerd-font"
 cask "font-victor-mono-nerd-font"
-cask "mongodb-compass"
 cask "superduper"
 cask "telegram"
 mas "Keynote", id: 409183694
