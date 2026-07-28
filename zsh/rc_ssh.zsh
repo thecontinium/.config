@@ -27,8 +27,9 @@ fi
 ## Use keychain to persist keys https://github.com/funtoo/keychain
 if hash keychain 2>/dev/null; then
   # eval "$(keychain --dir "$XDG_CACHE_HOME/keychain" --eval --agents ssh -Q --quiet current)"
+  # cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --quiet ${public_keys}"
   public_keys=$(cat $cached_public_keys)
-  cmd="keychain --dir ${XDG_CACHE_HOME}/keychain --eval --quiet ${public_keys}"
+  cmd="keychain add --dir ${XDG_CACHE_HOME}/keychain --eval --quiet ${public_keys}"
   eval $(eval "${cmd}")
 fi
 
