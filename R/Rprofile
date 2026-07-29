@@ -1,0 +1,15 @@
+options(
+    languageserver.server_capabilities = list(
+        hoverProvider = FALSE,
+        signatureHelpProvider = FALSE,
+        completionProvider = FALSE,
+        completionItemResolve = FALSE,
+        definitionProvider = FALSE,
+        referencesProvider = FALSE,
+        implementationProvider = FALSE,
+        documentHighlightProvider = FALSE,
+        documentSymbolProvider = FALSE,
+        workspaceSymbolProvider = FALSE,
+        renameProvider = FALSE
+    )
+)
