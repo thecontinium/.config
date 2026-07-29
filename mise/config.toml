@@ -1,6 +1,7 @@
 [tools]
 babashka = { version = "latest", exe = "bb" }
 clojure = "latest"
+"conda:cmdstan" = "latest"
 java = "25"
 
 [settings]
