@@ -5,7 +5,8 @@
     "oven-sh/bun/bun",
     "polyfy/polylith/poly",
     "shivammathur/php/php@7.4",
-    "thecontinium/brewupdate/brew-update"
+    "thecontinium/brewupdate/brew-update",
+    "thecontinium/tap/jags@4"
   ],
   "trustedtaps": [
     "buo/cask-upgrade",
